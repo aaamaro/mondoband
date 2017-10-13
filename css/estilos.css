@@ -1,0 +1,639 @@
+    /* Estilos de AAC para esta web */
+
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+@font-face {
+font-family: 'BNoise';
+src: local('fonts/bringNoise/BRINGTHANOIZE.TTF');
+font-weight: normal;
+font-style: normal;
+}
+/* COMUNES */
+
+.etiquetaMondo {
+font-family: 'Rock Salt', cursive;
+color: white;
+position: absolute;
+top: 10vw;
+right: 10vw;
+}
+
+.imgFondo {
+max-width: 100%;
+height: auto;
+}
+
+.ajusteImg {
+    width: 100%;
+    height: 100%;
+}
+.ajusteImgPortada {
+    width: 100%;
+}
+/* CONTENEDORES */
+/* FOTOS MUSICOS - PAGINA PRINCIPAL */
+
+.contenedor-map [class*='col-'] {
+  padding-left: 0;
+  padding-right: 0; }
+
+.contenedor-map {
+  height: 70vh;    
+/*  width: 87vw;*/
+  background: black;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; 
+    
+flex-direction: row ;
+-ms-flex-direction:row;
+-webkit-flex-direction:row;
+
+flex-wrap: wrap ;
+-ms-flex-wrap: wrap ;
+-webkit-flex- wrap: wrap ;
+    
+justify-content: space-between ;
+-ms-justify-content: space-between ;
+-webkit-justify-content: space-between ;
+
+}
+.contenedor-map-item {
+  position: relative;
+    background: black;
+  text-decoration: none; 
+}
+.contenedor-map-item:hover, .contenedor-map-item:focus {
+    text-decoration: none; 
+}
+.contenedor-map-item:hover .contenedor-map-item-image:after, .contenedor-map-item:focus .contenedor-map-item-image:after {
+      background-color: rgba(255, 255, 255, 0.5); 
+}
+
+
+/*
+.contenedor-map-item.contenedor-map-height-normal {
+height: 400px;
+}
+
+.contenedor-map-item.contenedor-map-height-big {
+height: 300px;
+}
+*/
+
+.contenedor-header-content-home {}
+
+.contenedor-header-content {
+z-index: 100;
+}
+
+.contenedor-map-item-image img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+/*      height: 100%;*/
+object-fit: cover;
+font-family: 'object-fit: cover;';
+transition: all .3s ease-in;
+}
+
+.contenedor-map-item-image:after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.25);
+transition: all .3s ease-in;
+}
+
+.grid-item a:hover .grid-item-contenedor {
+opacity: 1;
+-webkit-transform: translateY(0);
+-ms-transform: translateY(0);
+transform: translateY(0);
+}
+
+.grid-item-contenedor {
+font-family: "Sedgwick Ave", cursive;
+font-weight: 700;
+letter-spacing: 0.05em;
+transition: all 0.25s ease-in;
+background-color: transparent;
+padding: 15px;
+-webkit-transform: translateY(-100%);
+-ms-transform: translateY(-100%);
+transform: translateY(-100%);
+opacity: 0;
+}
+
+.grid-item-contenedor h4 {
+font-family: "Sedgwick Ave", cursive;
+color: #981010;
+font-size: 3.2vh;
+text-transform: none;
+}
+
+.grid-item-contenedor span {
+font-family: "Sedgwick Ave", cursive;
+color: black;
+font-size: 3.2vh;
+text-decoration: underline;
+}
+
+.grid-item-contenedor h4 {
+padding-bottom: 0;
+}
+
+.txtPie {
+font-family: 'Shadows Into Light', cursive;
+color: black;
+font-size: 3vh;
+}
+
+.nombresPie {
+padding-left: 40px;
+}
+/* MENUS PRINCIPAL */
+
+.content-header {
+min-height: 15vh;
+}
+
+.txtLetra {
+    font-size: 2vh;
+    text-align: center;
+}
+
+.galeria-item-image {
+  position: relative;
+/*
+  background-size: cover;
+  background-color: aqua;
+  height: 35vh;
+*/
+  width: 100%;
+  margin-bottom: 15px; 
+}
+.galeria-dibujoDiv {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer; 
+}
+.galeria-dibujoImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      font-family: 'object-fit: cover;'; 
+}
+
+
+/* MENU */
+nav {
+  margin-top: 2px;
+  margin-left: -10px;
+  width: 80%;
+  padding: 2px;
+  font-family: Raleway;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  top: 20px;
+  left: 3vw;
+  position: absolute;
+  display: inline-block;
+}
+#nav-1 {
+/*  background: #5175C0;*/
+}
+.link-1 {
+  transition: 0.6s;
+  color: #ffffff;
+  font-size: 4vw;
+  text-decoration: none;
+  border-right: 2px dotted transparent;
+/*  padding: 30px 8px 0 10px;*/
+  margin: 0 10px;
+}
+.link-1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0; 
+  text-decoration: none;
+  color: #EEA200;
+}
+.spanMenu {
+position: absolute;
+display: inline-block;
+color: #fff;
+/*background-color: rgba(255, 59, 56, 0.2);*/
+padding-left: 10px;
+padding-right: 10px;
+/*font-family: "Oswald", sans-serif;*/
+font-weight: 700;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+border-radius: 11px;
+-moz-border-radius: 11px;
+-webkit-border-radius: 11px;
+border: 1px solid #FAFAFA;
+}
+
+.menuIzqda {
+    position: absolute;
+display: inline-block;
+top: 20px;
+left: 3vw;
+}
+
+/* LOGO MENU */
+.logomenu {
+    padding: 10px;
+}
+
+.ajusteMondos {
+    margin-top: 15px;
+}
+
+.migaPan {
+    margin-top: -10px;
+}
+
+
+/*----------------------------------------------------*/
+/* ASIGNADO A DISPOSITIVOS */
+/*--------------------*/
+/* Anchura 320 */
+/*--------------------*/
+
+@media only screen and (min-width: 320px) {
+.content-header.contenedor-header-home {
+width: 87vw;
+height: 30vh;
+}
+.contenedor-map {    
+  width: 87vw;
+  height: 100%;
+}
+.etiquetaMondoDisp {
+font-size: 2vh;
+}
+.etiquetaTituloDisp {
+    font-size: 4vh;        
+}
+.etiquetaSubtituloDisp {
+    font-size: 3vh;        
+}
+.migaPan {
+    font-size: 3vh;        
+}
+.contenedor-map-height-normal {
+height: 20vh;
+}
+.contenedor-map-height-big {
+height: 28vh;
+max-width: 43vw;
+/*width: 42vw;*/
+}
+.link-1 {
+font-size: 2.5vw;
+}
+nav {
+top: 1.5vh;
+left: 4vw;
+}
+.grid-item-contenedor h4 {
+font-size: 2vh;
+}
+.grid-item-contenedor span {
+font-size: 2vh;
+}
+.content-header {
+min-height: 12vh;
+}
+.descrGrupo {
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.divTxtPie {
+transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+-webkit-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+-moz-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+-o-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+-ms-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+}
+/*--------------------*/
+/* Anchura 360 */
+/*--------------------*/
+@media only screen and (min-width: 360px) {
+.content-header.contenedor-header-home {
+min-height: 203px;
+height: 20vh;
+width: 92vw;
+}
+    
+.contenedor-map {    
+ width: 87vw;
+ height: 100%;
+}
+.etiquetaMondoDisp {
+font-size: 2vh;
+}
+.etiquetaTituloDisp {
+    font-size: 4vh;        
+}
+.etiquetaSubtituloDisp {
+    font-size: 3vh;        
+}
+.migaPan {
+    font-size: 3vh;        
+}
+.contenedor-map-height-normal {
+height: 18vh;
+}
+.contenedor-map-height-big {
+height: 31vh;
+width: 44vw;
+}
+.link-1 {
+font-size: 3vw;
+}
+
+nav {
+top: 1.5vh;
+left: 4vw;
+}
+.descrGrupo {
+  font-size: 3vw;
+  font-weight: 600;
+}
+.divTxtPie {
+transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+-webkit-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+-moz-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+-o-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+-ms-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
+}
+/*--------------------*/
+/* Anchura 768 */
+/*--------------------*/
+@media only screen and (min-width: 768px) {
+.content-header.contenedor-header-home {
+/*min-height: 398px;*/
+height: 45vh;
+width: 100%;
+}
+.contenedor-map {   
+width: 93vw;
+ height: 100%;
+}
+.etiquetaMondoDisp {
+font-size: 3vh;
+}
+.etiquetaTituloDisp {
+    font-size: 4vh;        
+}
+.etiquetaSubtituloDisp {
+    font-size: 3vh;        
+}
+.migaPan {
+    font-size: 2vh;        
+}
+.contenedor-map-height-normal {
+height: 18vh;
+}
+.contenedor-map-height-big {
+height: 55vh;
+width: 50vw;
+}
+.link-1 {
+font-size: 2vw;
+}
+.grid-item-contenedor h4 {
+font-size: 2vh;
+}
+.grid-item-contenedor span {
+font-size: 2vh;
+}
+
+nav {
+top: 3vh;
+left: 3vw;
+}
+.descrGrupo {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.divTxtPie {
+transform: rotate(28deg) scale(0.9) skew(1deg) translate(0px);
+-webkit-transform: rotate(28deg) scale(0.9) skew(1deg) translate(0px);
+-moz-transform: rotate(28deg) scale(0.9) skew(1deg) translate(0px);
+-o-transform: rotate(28deg) scale(0.9) skew(1deg) translate(0px);
+-ms-transform: rotate(28deg) scale(0.9) skew(1deg) translate(0px);
+}  
+/*--------------------*/
+/* Anchura 1024 */
+/*--------------------*/
+@media only screen and (min-width: 1024px) {
+.content-header.contenedor-header-home {
+min-height: 545px;
+height: 23vh;
+width: 100vw;
+}
+.contenedor-map {    
+     width: 100%;
+    height: 100%;
+}
+.etiquetaMondoDisp {
+font-size: 3vh;
+}
+.etiquetaTituloDisp {
+    font-size: 4vh;        
+}
+.etiquetaSubtituloDisp {
+    font-size: 3.5vh;        
+}
+.migaPan {
+    font-size: 2vh;        
+}
+.contenedor-map-height-normal {
+height: 19vh;
+}
+.contenedor-map-height-big {
+height: 40vh;
+width: 50vw;
+}
+.link-1 {
+font-size: 2vw;
+}
+.grid-item-contenedor h4 {
+font-size: 2vh;
+}
+.grid-item-contenedor span {
+font-size: 2vh;
+}
+nav {
+top: 4vh;
+left: 4vw;
+}
+.descrGrupo {
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.txtPie {
+    font-size: 4vh;
+}
+.divTxtPie {
+transform: rotate(28deg) scale(0.7) skew(1deg) translate(0px);
+-webkit-transform: rotate(28deg) scale(0.7) skew(1deg) translate(0px);
+-moz-transform: rotate(28deg) scale(0.7) skew(1deg) translate(0px);
+-o-transform: rotate(28deg) scale(0.7) skew(1deg) translate(0px);
+-ms-transform: rotate(28deg) scale(0.7) skew(1deg) translate(0px);
+}
+/*--------------------*/
+/* Anchura 1200 */
+/*--------------------*/
+@media only screen and (min-width: 1200px) {
+.content-header.contenedor-header-home {
+    min-height: 667px;
+    height: 25vh;
+    width: 100vw;
+}
+.contenedor-map { 
+ height: 100%;
+  width: 100%;
+}
+.etiquetaMondoDisp {
+    
+    font-size: 6vh;
+}
+.etiquetaTituloDisp {
+    font-size: 6vh;        
+}
+.etiquetaSubtituloDisp {
+    font-size: 4vh;        
+}
+.migaPan {
+    font-size: 2.5vh;        
+}
+.contenedor-map-height-normal {
+    height: 40vh;
+}
+.contenedor-map-height-big {
+    height: 65vh;
+}
+.link-1 {
+    font-size: 2vw;
+}
+nav {
+    top: 4vh;
+    left: 4vw;
+}
+.grid-item-contenedor h4 {
+    font-size: 2.5vh;
+}
+.grid-item-contenedor span {
+    font-size: 2.5vh;
+}
+.content-header {
+    min-height: 30vh;
+}
+.descrGrupo {
+      font-size: 1.2vw;
+      font-weight: 600;
+}
+.txtPie {
+    font-size: 4vh;
+}
+.divTxtPie {
+transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+}   
+/*--------------------*/
+/* Anchura 2048 */
+/*--------------------*/
+@media only screen and (min-width: 2048px) {
+.content-header.contenedor-header-home {
+        min-height: 1080px;
+        height: 75vh;
+        width: 100vw;
+}
+.contenedor-map {    
+  width: 100%;
+ height: 100%;
+}
+.etiquetaMondoDisp {
+        font-size: 5vh;
+}
+.etiquetaTituloDisp {
+    font-size: 7vh;        
+}
+.etiquetaSubtituloDisp {
+    font-size: 5vh;        
+}
+.migaPan {
+    font-size: 3vh;        
+}
+.contenedor-map-height-normal {
+    height: 65vh;
+}
+.contenedor-map-height-big {
+    height: 60vh;
+}
+.link-1 {
+    font-size: 3vw;
+}
+nav {
+    top: 1.5vh;
+    left: 4vw;
+}
+.grid-item-contenedor h4 {
+    font-size: 4vh;
+}
+.grid-item-contenedor span {
+    font-size: 4vh;
+}
+.content-header {
+    min-height: 30vh;
+}
+
+.descrGrupo {
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+
+.txtPie {
+    font-size: 5vh;
+}
+
+.divTxtPie {
+transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+-webkit-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+-moz-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+-o-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+-ms-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
+}
+    /* Efecto Parallax para Por*/
+    /* Propiedades comunes */
+    .parallaxCommon {
+        /* Full height */
+        height: 100%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+   .parallaxMedia { 
+       background-image: url("images/RESP-Portada/grupoPortada-1920x1080_xzq6df_c_scale,w_1920.jpg");
+    }
+

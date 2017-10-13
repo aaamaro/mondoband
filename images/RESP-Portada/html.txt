@@ -1,0 +1,12 @@
+<picture>
+<img
+sizes="(max-width: 1920px) 100vw, 1920px"
+srcset="
+images/RESP-Portada/grupoPortada-1920x1080_xzq6df_c_scale,w_360.jpg 360w,
+images/RESP-Portada/grupoPortada-1920x1080_xzq6df_c_scale,w_707.jpg 707w,
+images/RESP-Portada/grupoPortada-1920x1080_xzq6df_c_scale,w_968.jpg 968w,
+images/RESP-Portada/grupoPortada-1920x1080_xzq6df_c_scale,w_1186.jpg 1186w,
+images/RESP-Portada/grupoPortada-1920x1080_xzq6df_c_scale,w_1920.jpg 1920w"
+src="images/RESP-Portada/grupoPortada-1920x1080_xzq6df_c_scale,w_1920.jpg"
+alt="">
+</picture>

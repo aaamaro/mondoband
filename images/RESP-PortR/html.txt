@@ -1,0 +1,9 @@
+<picture>
+<img
+sizes="(max-width: 480px) 100vw, 480px"
+srcset="
+images/RESP-PortR/map-1_u4qzek_c_scale,w_320.jpg 320w,
+images/RESP-PortR/map-1_u4qzek_c_scale,w_480.jpg 480w"
+src="images/RESP-Instr/map-1_u4qzek_c_scale,w_480.jpg"
+alt="">
+</picture>

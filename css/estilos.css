@@ -271,7 +271,8 @@ left: 3vw;
 /* Anchura 320 */
 /*--------------------*/
 
-@media only screen and (min-width: 320px) {
+ @media only screen and (min-width: 320px) { 
+
 .content-header.contenedor-header-home {
 width: 87vw;
 height: 30vh;
@@ -328,10 +329,13 @@ transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
 -o-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
 -ms-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
 }
+     
+}
 /*--------------------*/
 /* Anchura 360 */
 /*--------------------*/
 @media only screen and (min-width: 360px) {
+
 .content-header.contenedor-header-home {
 min-height: 203px;
 height: 20vh;
@@ -380,10 +384,13 @@ transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
 -o-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
 -ms-transform: rotate(28deg) scale(0.6) skew(1deg) translate(0px);
 }
+    
+}
 /*--------------------*/
 /* Anchura 768 */
 /*--------------------*/
 @media only screen and (min-width: 768px) {
+
 .content-header.contenedor-header-home {
 /*min-height: 398px;*/
 height: 45vh;
@@ -437,10 +444,13 @@ transform: rotate(28deg) scale(0.9) skew(1deg) translate(0px);
 -o-transform: rotate(28deg) scale(0.9) skew(1deg) translate(0px);
 -ms-transform: rotate(28deg) scale(0.9) skew(1deg) translate(0px);
 }  
+    
+}
 /*--------------------*/
 /* Anchura 1024 */
 /*--------------------*/
 @media only screen and (min-width: 1024px) {
+
 .content-header.contenedor-header-home {
 min-height: 545px;
 height: 23vh;
@@ -496,10 +506,13 @@ transform: rotate(28deg) scale(0.7) skew(1deg) translate(0px);
 -o-transform: rotate(28deg) scale(0.7) skew(1deg) translate(0px);
 -ms-transform: rotate(28deg) scale(0.7) skew(1deg) translate(0px);
 }
+
+}
 /*--------------------*/
 /* Anchura 1200 */
 /*--------------------*/
 @media only screen and (min-width: 1200px) {
+
 .content-header.contenedor-header-home {
     min-height: 667px;
     height: 25vh;
@@ -558,10 +571,12 @@ transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
 -o-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
 -ms-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
 }   
+}
 /*--------------------*/
 /* Anchura 2048 */
 /*--------------------*/
 @media only screen and (min-width: 2048px) {
+
 .content-header.contenedor-header-home {
         min-height: 1080px;
         height: 75vh;
@@ -622,6 +637,18 @@ transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
 -o-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
 -ms-transform: rotate(28deg) scale(1) skew(1deg) translate(0px);
 }
+    }
+    
+/* MEDIA QUERIES PARA INTERNET EXPLORER */
+@media screen and (min-width:2048px), screen\0 {
+
+
+}
+
+    
+    
+    
+    
     /* Efecto Parallax para Por*/
     /* Propiedades comunes */
     .parallaxCommon {

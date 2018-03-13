@@ -793,7 +793,9 @@ label.error {
     top: 0;
     left: 65px;
     background-color: #333;
-    z-index: 100; }
+    z-index: 100; 
+/* AAC */
+    width: 40em;}
     .main-footer-search-toggle:hover .main-footer-search-form input {
 /*      max-width: 118px; } */
         max-width: 300px;}
@@ -816,8 +818,10 @@ label.error {
         font-weight: 900;
         box-shadow: none;
         /* AAC width: 118px; */
-        width: 500px;
-        max-width: 0px;
+/*        width: 500px;
+        */
+        max-width: 0px;  
+        width: 1000px;
         transition: max-width .35s ease-in; }
  
       .main-footer-search-form button {

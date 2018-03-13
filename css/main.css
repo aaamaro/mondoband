@@ -2448,8 +2448,15 @@ border: 3px outset #ffffff;}
     width: 100%;
     text-decoration: none;
     transition: all 0.55s ease-in;
-    color: #333;
-    padding: 20px 0; }
+/*    color: #333;*/
+    padding: 20px 0; 
+
+/* AAC **/
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    text-transform: none;
+    color: #053146;
+}
     .event-list li a:before {
       transition: all 0.45s ease-in; }
 

@@ -795,10 +795,11 @@ label.error {
     background-color: #333;
     z-index: 100; 
 /* AAC */
-    width: 40em;}
+    width: 80vw;}
     .main-footer-search-toggle:hover .main-footer-search-form input {
-/*      max-width: 118px; } */
-        max-width: 300px;}
+/*      max-width: 118px; 
+*/
+        width: 80vw;}
     .main-footer-search-toggle:hover .main-footer-search-form button {
       max-width: 32px; }
       .main-footer-search-toggle:hover .main-footer-search-form button i {
@@ -818,10 +819,9 @@ label.error {
         font-weight: 900;
         box-shadow: none;
         /* AAC width: 118px; */
-/*        width: 500px;
-        */
-        max-width: 0px;  
-        width: 1000px;
+/*        width: 500px;      
+        max-width: 0px;
+  */  width: 0px;
         transition: max-width .35s ease-in; }
  
       .main-footer-search-form button {

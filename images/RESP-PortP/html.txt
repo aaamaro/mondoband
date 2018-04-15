@@ -1,9 +1,0 @@
-<picture>
-<img
-sizes="(max-width: 480px) 100vw, 480px"
-srcset="
-images/RESP-PortP/map-2_ycsfdd_c_scale,w_270.jpg 270w,
-images/RESP-PortP/map-2_ycsfdd_c_scale,w_480.jpg 480w"
-src="images/RESP-PortP/map-2_ycsfdd_c_scale,w_480.jpg"
-alt="">
-</picture>

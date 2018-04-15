@@ -1,9 +1,0 @@
-<picture>
-<img
-sizes="(max-width: 750px) 100vw, 750px"
-srcset="
-images/RESP-Instr/map-8_r6tzzf_c_scale,w_320.jpg 320w,
-images/RESP-Instr/map-8_r6tzzf_c_scale,w_750.jpg 750w"
-src="images/RESP-Instr/map-8_r6tzzf_c_scale,w_750.jpg"
-alt="">
-</picture>

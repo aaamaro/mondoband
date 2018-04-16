@@ -8,14 +8,12 @@
 	<head>
 		<title>MONDO</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-        
+		<meta name="viewport" content="width=device-width, initial-scale=1" />       
 
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <link rel="stylesheet" href="css/plyr.css">
-
         <style>
         .centrarAudio {
           display: block;
@@ -71,7 +69,7 @@
 						<header class="major">
 							<h2>MONDO</h2>
 						</header>
-						<p>En enero de 2017 comenzó este proyecto acústico. Teníamos un puñado de historias y algunos quejíos que merecía la pena contar y cantar. Poco a poco fuimos convenciendo al silencio. Y, por esas cosas que tiene la música, seguro que encontraremos a alguien que, al escucharlas, disfrute tanto como nosotros interpretándolas.</p>
+						<p>En enero de 2017 comenzó este proyecto acústico. Un puñado de historias y algunos quejíos que merecía la pena contar y cantar. Poco a poco fuimos convenciendo al silencio. Y, por esas cosas que tiene la música, seguro que encontraremos a alguien que, al escucharlas, disfrute tanto como nosotros interpretándolas.</p>
 						<ul class="actions">
 							<li><img src="images/definicion.jpg"></li>
 						</ul>
@@ -80,34 +78,34 @@
 				<!-- Two -->
 					<section id="two" class="estiloMainSection">
 						<h2>MÚSICA</h2>
-						<div class="row estiloRow">
+						<div id="gallery" class="row estiloRow">
 							<article class="6u 12u$(xsmall) work-item estiloWorkItem">
 								<img src="images/temas/agua_370x217.jpg" class="estiloDibujo" alt="dibujo agua" />
 								<audio controls class="centrarAudio">
                         				<source src="mp3/AGUA.mp3" type="audio/mp3">
                                 </audio>
-                                <h6 class="estiloH5">Letra/Música:AAC - Arreglos: MONDO - Dibujo:Rocío</h6>
+ 								<a href="images/temas/creditos-agua.jpg" class="image fit thumb"><h5>AGUA</h5></a>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item estiloWorkItem">
 								<img src="images/temas/broma_370x217.jpg" class="estiloDibujo" alt="dibujo broma" />
 								<audio controls class="centrarAudio">
                         				<source src="mp3/BROMA.mp3" type="audio/mp3">
                                 </audio>
-                                <h6 class="estiloH5">Letra/Música:AAC - Arreglos: MONDO - Dibujo:Rocío</h6>
+								<a href="images/temas/creditos-broma.jpg" class="image fit thumb"><h5>LA BROMA</h5></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item estiloWorkItem">
 								<img src="images/temas/verguenza_370x217.jpg" class="estiloDibujo" alt="dibujo vergüenza" />
 								<audio controls class="centrarAudio">
                         				<source src="mp3/VERGUENZA.mp3" type="audio/mp3">
                                 </audio>
-                                <h6 class="estiloH5">Letra/Música:AAC - Arreglos: MONDO - Dibujo:Rocío</h6>
+								<a href="images/temas/creditos-verguenza.jpg" class="image fit thumb"><h5>VERGÜENZA</h5></a>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item estiloWorkItem">
 								<img src="images/temas/esperan_370x217.jpg" class="estiloDibujo" alt="dibujo Los que te esperan" />
 								<audio controls class="centrarAudio">
                         				<source src="mp3/LQTESPERAN.mp3" type="audio/mp3">
                                 </audio>
-                                <h6 class="estiloH5">Letra/Música:AAC - Arreglos: MONDO - Dibujo:Rocío</h6>
+								<a href="images/temas/creditos-lqtesperan.jpg" class="image fit thumb"><h5>LOS QUE TE ESPERAN</h5></a>
 							</article>
 <!--							<article class="6u 12u$(xsmall) work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
@@ -170,25 +168,38 @@
 					<ul class="icons">
 						<li><a href="https://www.facebook.com/Mondo-Band-1498338833536681/" target="_blank"  class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.youtube.com/channel/UCx5ol4oZjr_eUaNzGpfFepA" target="_blank" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
-					</ul>
+					</ul>									
 					<ul class="copyright">
-						<li>&copy; MONDO</li><li>Diseño: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; MONDO</li>
+						<li>Imágenes: Rocío</li>
+						<li>Plantilla: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-  <!--    Reproductor mp3 Https://github.com/sampotts/plyr-->
-    <script src="js/plugins/plyr.js"></script>
+
+		<script src="assets/js/jquery.poptrox.min.js"></script>			
+  <!-- Galeria de imagenes con PopTrox -->
+        <script>
+			$(function() {				
+				var identificador = $('#gallery');
+				identificador.poptrox({
+					usePopupCaption: true,	
+                    caption: {selector: "h5"}
+				});
+			
+			});
+		  </script>		
+   <!--    Reproductor mp3 Https://github.com/sampotts/plyr-->
+    <script src="js/plyr.js"></script>
     <script>
         plyr.setup();
-
     </script>
 	</body>
 </html>

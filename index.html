@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <link rel="stylesheet" href="css/plyr.css">
+         <link rel="stylesheet" type="text/css" href="css/imagelightbox.min.css" media="screen">
+
         <style>
         .centrarAudio {
           display: block;
@@ -84,8 +86,9 @@
 								<audio controls class="centrarAudio">
                         				<source src="mp3/AGUA.mp3" type="audio/mp3">
                                 </audio>
- 								<a href="images/temas/creditos-agua.jpg" class="image fit thumb"><h5>AGUA</h5></a>
-							</article>
+ <!--	<a href="images/temas/creditos-agua.jpg" class="image fit thumb"><h5>AGUA</h5></a>-->	
+                            <a href="images/temas/creditos-agua.jpg" data-imagelightbox="creditos" data-ilb2-caption="AGUA"><h5>AGUA</h5></a>
+                            </article>
 							<article class="6u$ 12u$(xsmall) work-item estiloWorkItem">
 								<img src="images/temas/broma_370x217.jpg" class="estiloDibujo" alt="dibujo broma" />
 								<audio controls class="centrarAudio">
@@ -183,10 +186,27 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
-		<script src="assets/js/jquery.poptrox.min.js"></script>			
+<!-- Galería de imágenes con ImageLightBox -->
+<script src="js/imagelightbox.min.js"></script>
+<script>
+    $( function()
+    {
+         $('a[data-imagelightbox="creditos"]').imageLightbox({
+ /*           button:         true,           
+            caption:        true,*/
+            fullscreen:     true
+         });
+        
+/*            $( selector ).imageLightbox({
+            button:         true,           
+            caption:        true,    
+            fullscreen:     true    */ 
+        });
+</script>
+        
+<!--		<script src="assets/js/jquery.poptrox.min.js"></script>			-->
   <!-- Galeria de imagenes con PopTrox -->
-        <script>
+ <!--       <script>
 			$(function() {				
 				var identificador = $('#gallery');
 				identificador.poptrox({
@@ -198,7 +218,7 @@
 				});
 			
 			});
-		  </script>		
+		  </script>-->		
    <!--    Reproductor mp3 Https://github.com/sampotts/plyr-->
     <script src="js/plyr.js"></script>
     <script>

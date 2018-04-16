@@ -49,6 +49,28 @@
             width: 18em;
             height: 4em;
         }
+        .creditos {
+            margin: 0 0 1.5em 0;
+            display: block;
+            margin: 0 0 2em 0;
+            width: 100%;
+            text-align: center;
+        }  
+        .creditos:before {
+            transition: opacity 0.2s ease-in-out;
+            background: url(assets/css/images/overlay.png);
+            border-radius: 0.35em;
+            content: '';
+            display: block;
+            height: 100%;
+            left: 0;
+            opacity: 0.5;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
         </style>
         
 	</head>
@@ -192,8 +214,8 @@
     $( function()
     {
          $('a[data-imagelightbox="creditos"]').imageLightbox({
- /*           button:         true,           
-            caption:        true,*/
+          button:         true,           
+            caption:        true,
             fullscreen:     true
          });
         
@@ -204,8 +226,9 @@
         });
 </script>
         
-<!--		<script src="assets/js/jquery.poptrox.min.js"></script>			-->
+
   <!-- Galeria de imagenes con PopTrox -->
+<!--		<script src="assets/js/jquery.poptrox.min.js"></script>			-->
  <!--       <script>
 			$(function() {				
 				var identificador = $('#gallery');
@@ -219,6 +242,7 @@
 			
 			});
 		  </script>-->		
+        
    <!--    Reproductor mp3 Https://github.com/sampotts/plyr-->
     <script src="js/plyr.js"></script>
     <script>

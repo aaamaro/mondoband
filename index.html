@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <link rel="stylesheet" href="css/plyr.css">
-         <link rel="stylesheet" type="text/css" href="css/imagelightbox.min.css" media="screen">
+         <link rel="stylesheet" type="text/css" href="css/imagelightbox.css" media="screen">
 
         <style>
         .centrarAudio {
@@ -108,7 +108,6 @@
 								<audio controls class="centrarAudio">
                         				<source src="mp3/AGUA.mp3" type="audio/mp3">
                                 </audio>
- <!--	<a href="images/temas/creditos-agua.jpg" class="image fit thumb"><h5>AGUA</h5></a>-->	
                             <a href="images/temas/creditos-agua.jpg" class="image fit thumb" data-imagelightbox="creditos" data-ilb2-caption="AGUA"><h5>AGUA</h5></a>
                             </article>
 							<article class="6u$ 12u$(xsmall) work-item estiloWorkItem">
@@ -116,21 +115,21 @@
 								<audio controls class="centrarAudio">
                         				<source src="mp3/BROMA.mp3" type="audio/mp3">
                                 </audio>
-								<a href="images/temas/creditos-broma.jpg" class="image fit thumb"><h5>LA BROMA</h5></a>
+								<a href="images/temas/creditos-broma.jpg" class="image fit thumb" data-imagelightbox="creditos" data-ilb2-caption="LA BROMA"><h5>LA BROMA</h5></a>
 							</article>
 							<article class="6u 12u$(xsmall) work-item estiloWorkItem">
 								<img src="images/temas/verguenza_370x217.jpg" class="estiloDibujo" alt="dibujo vergüenza" />
 								<audio controls class="centrarAudio">
                         				<source src="mp3/VERGUENZA.mp3" type="audio/mp3">
                                 </audio>
-								<a href="images/temas/creditos-verguenza.jpg" class="image fit thumb"><h5>VERGÜENZA</h5></a>
+								<a href="images/temas/creditos-verguenza.jpg" class="image fit thumb" data-imagelightbox="creditos" data-ilb2-caption="VERGÜENZA"><h5>VERGÜENZA</h5></a>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item estiloWorkItem">
 								<img src="images/temas/esperan_370x217.jpg" class="estiloDibujo" alt="dibujo Los que te esperan" />
 								<audio controls class="centrarAudio">
                         				<source src="mp3/LQTESPERAN.mp3" type="audio/mp3">
                                 </audio>
-								<a href="images/temas/creditos-lqtesperan.jpg" class="image fit thumb"><h5>LOS QUE TE ESPERAN</h5></a>
+								<a href="images/temas/creditos-lqtesperan.jpg" class="image fit thumb" data-imagelightbox="creditos" data-ilb2-caption="LOS QUE TE ESPERAN"><h5>LOS QUE TE ESPERAN</h5></a>
 							</article>
 <!--							<article class="6u 12u$(xsmall) work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
@@ -209,13 +208,15 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 <!-- Galería de imágenes con ImageLightBox -->
-<script src="js/imagelightbox.min.js"></script>
+<script src="js/imagelightbox.js"></script>
 <script>
     $( function()
     {
          $('a[data-imagelightbox="creditos"]').imageLightbox({
-          button:         true,           
-            caption:        true,
+//            button:         true, 
+            gutter:         0.25, 
+//            caption:        true,
+            quitOnImgClick: true,
             fullscreen:     true
          });
         

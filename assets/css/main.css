@@ -1340,7 +1340,8 @@
 		}
 
 		.row {
-			margin: 0 0 -1px -1.5em;
+/*		AAC	margin: 0 0 -1px -1.5em;*/
+        margin: 0 0 -1px -1em;
 		}
 
 		.row.uniform > * {
@@ -2853,7 +2854,8 @@
 
 	body.is-touch #header {
 		background-attachment: scroll;
-		background-size: auto, cover;
+		/* AAC background-size: auto, cover; */
+        background-size: contain;
 	}
 
 	body.is-touch .poptrox-popup .nav-next,
@@ -2935,7 +2937,8 @@
 			#header {
 				background-attachment: scroll;
 				background-position: top left, center center;
-				background-size: auto,		cover;
+/*				background-size: auto,		cover;*/
+                background-size: contain;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
@@ -2957,8 +2960,8 @@
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				/* AAC  background-color: #1f1815;
+				background-image: url("images/overlay.png"), url("../../images/bg.jpg");*/
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3113,9 +3116,13 @@
 					}
 
 		/* Header */
-
+/*AAC*/
 			#header {
-				padding: 4.5em 1.5em;
+				/* padding: 4.5em 1.5em;*/
+                    padding-top: 7.5em;
+                    padding-right: 2.5em;
+                    padding-bottom: 7.5em;
+                    padding-left: 3.5em;
 			}
 
 				#header h1 br {

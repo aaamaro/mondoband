@@ -1,242 +1,789 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
 	<head>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="author" content="SemiColonWeb" />
+
+		<!-- Stylesheets
+	============================================= -->
+		<link
+			href="http://fonts.googleapis.com/css?family=Poppins:200,300,400,400i,600,700|Montserrat:300,400,700|Caveat+Brush"
+			rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+		<link rel="stylesheet" href="estilos.css" type="text/css" />
+
+
+		<link rel="stylesheet" href="css/dark.css" type="text/css" />
+		<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+		<!-- Music Specific Stylesheet -->
+		<link rel="stylesheet" href="music/music.css" type="text/css" />
+		<!-- / -->
+
+		<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+		<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
+		<link rel="stylesheet" href="css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+
+		<link rel="stylesheet" href="music/css/fonts.css" type="text/css" />
+		<!-- Bootstrap Switch CSS -->
+		<link rel="stylesheet" href="css/components/bs-switches.css" type="text/css"
+			/>
+
+		<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Theme color -->
+		<link rel="stylesheet" href="css/colors.php?color=ed215e" type="text/css" />
+		<!-- Audio Player Plugin CSS -->
+		<link rel="stylesheet"
+			href="music/css/mediaelement/mediaelementplayer.css">
+
+		<!-- Document Title
+	============================================= -->
 		<title>MONDO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />       
 
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-        <link rel="stylesheet" href="css/plyr.css">
-         <link rel="stylesheet" type="text/css" href="css/imagelightbox.css" media="screen">
+		<style>
+		@media (max-width: 479px) {
+			.swiper_wrapper:not(.force-full-screen),
+			.swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide {
+				height: 300px !important;
+			}
+		}
 
-        <style>
-        .centrarAudio {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .estiloH5 {
-          text-align: center;
-        }
-        .estiloDibujo{
-            display: block;
-          margin-left: auto;
-          margin-right: auto;                
-        }
-        .estiloWorkItem {
-            padding-bottom: 0;
-            padding-left: 0;
-            padding-right: 0;
-            padding-top: 0;
-             border: 0.25px solid black;
-        }
-        .estiloMainSection{
-            border-top: solid 2px #efefef !important;
-            margin: 2em 0 0 0 !important;
-            padding: 2em 0 0 0 !important;
-            }
-        .estiloIdMain {
-            padding: 2em 2em 2em 2em !important;
-        }
-        .imagenAvatar {
-            width: 18em;
-            height: 4em;
-        }
-        .creditos {
-            margin: 0 0 1.5em 0;
-            display: block;
-            margin: 0 0 2em 0;
-            width: 100%;
-            text-align: center;
-        }  
-        .creditos:before {
-            transition: opacity 0.2s ease-in-out;
-            background: url(assets/css/images/overlay.png);
-            border-radius: 0.35em;
-            content: '';
-            display: block;
-            height: 100%;
-            left: 0;
-            opacity: 0.5;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            box-sizing: border-box;
-        }
-        .creditosWeb {
-            list-style: none;
-            margin: 0 0 2em 0;
-            padding-left: 1em;  
-            font-size: 0.7em;
-        }
-        .copyrightBlack {
-            color: black !important;
-        }
-        .estiloH2 {
-            display:inline;
-        }
-        .estiloRedes {
-            display:inline;
-            margin-left: 4em;
-        }
-        </style>
-        
+		.css3-spinner { background-color: #131722; }
+	</style>
 	</head>
-	<body id="top">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#"><img  class="imagenAvatar" src="images/mondo-logo4.png" alt="logo" /></a>
+	<body class="stretched bgcolor2" data-loader="4" data-loader-color="theme">
+		<!-- Document Wrapper
+	============================================= -->
+		<div id="wrapper" class="clearfix" style="margin-bottom: 40px">
+
+			<!-- Header
+		============================================= -->
+			<header id="header" class="full-header transparent-header dark no-sticky">
+				<div id="header-wrap">
+
+					<div class="container clearfix">
+
+						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+						<!-- Logo
+					============================================= -->
+						<div id="logo">
+							<a href="index.html" class="standard-logo"
+								data-dark-logo="music/images/logo-MONDO.jpg"><img
+									src="music/images/logo-MONDO.jpg" alt="Logo MONDO"></a>
+							<a href="index.html" class="retina-logo"
+								data-dark-logo="music/images/logo-MONDO.jpg"><img
+									src="music/images/logo-MONDO.jpg" alt="Logo Mondo"></a>
+						</div><!-- #logo end -->
+
+						<!-- Primary Navigation
+					============================================= -->
+						<nav id="primary-menu" class="clearfix not-dark">
+							<ul>
+								<li class="active"><a href="#"><div>Principal</div></a></li>
+								<li><a href="#lnkCanciones"><div>Musica</div></a></li>
+								<li><a href="#lnkVideos"><div>Videos</div></a></li>
+								<li>
+									<a href="https://www.facebook.com/Mondo-Band-1498338833536681"
+									class="social-icon si-small si-borderless">
+										<i class="icon-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/lamondoband/" class="social-icon
+										si-small si-borderless">
+										<i class="icon-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</nav><!-- #primary-menu end -->
+					</div>
 				</div>
-			</header>
 
-		<!-- Main -->
-			<div id="main" class="estiloIdMain">
+			</header><!-- #header end -->
 
-				<!-- One -->
-					<section id="one" class="estiloMainSection">
-						<header class="major">
-							<h2 class="estiloH2">MONDO</h2>
-							<ul class="icons estiloRedes">
-						<li><a href="https://www.facebook.com/Mondo-Band-1498338833536681/" target="_blank"  class="icon fa-facebook fa-lg"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.youtube.com/channel/UCx5ol4oZjr_eUaNzGpfFepA" target="_blank" class="icon fa-youtube fa-lg"><span class="label">Youtube</span></a></li>
-                        <li><a href="https://open.spotify.com/album/5D57vpl7TLAHotS2FgnMzG" target="_blank" class="icon fa-spotify fa-lg"><span class="label">Youtube</span></a></li>
-					</ul>	
-						</header>
-						<p>En enero de 2017 comenzó este proyecto acústico. Un puñado de historias y algunos quejíos que merecía la pena contar y cantar. Poco a poco fuimos convenciendo al silencio. Y, por esas cosas que tiene la música, seguro que encontraremos a alguien que, al escucharlas, disfrute tanto como nosotros interpretándolas.</p>
-						<ul class="actions">
-							<li><img src="images/definicion.jpg"></li>
-						</ul>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="estiloMainSection">
-						<h2>MÚSICA</h2>
-						<div id="gallery" class="row estiloRow">
-							<article class="6u 12u$(xsmall) work-item estiloWorkItem">
-                            <a href="images/temas/creditos-agua.jpg" data-imagelightbox="creditos" data-ilb2-caption="AGUA">
-								<img src="images/temas/agua_370x217.jpg" class="estiloDibujo" alt="dibujo agua" /> </a>
-                                <audio controls class="centrarAudio">
-                        				<source src="mp3/AGUA.mp3" type="audio/mp3">
-                                </audio>
-                            <a href="images/temas/creditos-agua.jpg" class="image fit thumb" data-imagelightbox="creditos" data-ilb2-caption="AGUA"><h5>AGUA</h5></a>
-                            </article>
-							<article class="6u$ 12u$(xsmall) work-item estiloWorkItem">
-                                <a href="images/temas/creditos-broma.jpg" data-imagelightbox="creditos" data-ilb2-caption="LA BROMA">
-								<img src="images/temas/broma_370x217.jpg" class="estiloDibujo" alt="dibujo broma" /></a>
-								<audio controls class="centrarAudio">
-                        				<source src="mp3/BROMA.mp3" type="audio/mp3">
-                                </audio>
-								<a href="images/temas/creditos-broma.jpg" class="image fit thumb" data-imagelightbox="creditos" data-ilb2-caption="LA BROMA"><h5>LA BROMA</h5></a>
-							</article>
-							<article class="6u 12u$(xsmall) work-item estiloWorkItem">
-								<a href="images/temas/creditos-verguenza.jpg" data-imagelightbox="creditos" data-ilb2-caption="VERGÜENZA">
-                                    <img src="images/temas/verguenza_370x217.jpg" class="estiloDibujo" alt="dibujo vergüenza" /></a>
-								<audio controls class="centrarAudio">
-                        				<source src="mp3/VERGUENZA.mp3" type="audio/mp3">
-                                </audio>
-								<a href="images/temas/creditos-verguenza.jpg" class="image fit thumb" data-imagelightbox="creditos" data-ilb2-caption="VERGÜENZA"><h5>VERGÜENZA</h5></a>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item estiloWorkItem">
-                                <a href="images/temas/creditos-lqtesperan.jpg" data-imagelightbox="creditos" data-ilb2-caption="LOS QUE TE ESPERAN">
-                                    <img src="images/temas/esperan_370x217.jpg" class="estiloDibujo" alt="dibujo Los que te esperan" /></a>
-								<audio controls class="centrarAudio">
-                        				<source src="mp3/LQTESPERAN.mp3" type="audio/mp3">
-                                </audio>
-								<a href="images/temas/creditos-lqtesperan.jpg" class="image fit thumb" data-imagelightbox="creditos" data-ilb2-caption="LOS QUE TE ESPERAN"><h5>LOS QUE TE ESPERAN</h5></a>
-							</article>
-<!--							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>-->
+			<!-- Slider
+		============================================= -->
+			<section id="slider" class="slider-element clearfix swiper_wrapper"
+				style="background: #131722; height: 800px" data-effect="fade"
+				data-loop="true" data-speed="1000">
+				<div class="swiper-container swiper-parent">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide dark" style="background:
+							url('music/images/slider/1.jpg') no-repeat bottom center;
+							background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption">
+									<h2 class="font-primary nott"></h2>
+									<p class="d-none d-md-block"></p>
+								</div>
+							</div>
 						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="estiloMainSection">
-						<h2>Contactar</h2>
-    					<ul class="icons">
-                        <li>aacaap@yahoo.es</li>
-						<li><a href="https://www.facebook.com/Mondo-Band-1498338833536681/" target="_blank"  class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.youtube.com/channel/UCx5ol4oZjr_eUaNzGpfFepA" target="_blank" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
-                        <li><a href="https://open.spotify.com/album/5D57vpl7TLAHotS2FgnMzG" target="_blank" class="icon fa-spotify"><span class="label">Youtube</span></a></li>
-           </ul>	
-                        
-                        <br/>
-                        <br/>
-                        <ul class="creditosWeb">
-                            <li>Dibujos: RocíoJ | Logo: PatriciaM</li>
-                            <li>Web: AAmaro - Plantilla: <a href="http://html5up.net">HTML5 UP</a><li>
-					</ul>
-	
-					</section>
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">									
-					<ul class="copyright copyrightBlack">
-						<li>&copy; MONDO</li>
-					</ul>
+						<div class="swiper-slide dark" style="background-image:
+							url('music/images/slider/1.jpg'); background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption">
+									<h2 class="font-primary nott">Mondo</h2>
+									<p class="d-none d-md-block"></p>
+									<a class="button button-rounded t400 ls1 track-list clearfix"
+										data-track="music/tracks/ANTES.mp3"
+										data-poster="music/tracks/poster-images/antes-150X150.jpg"
+										data-title="ANTES" data-singer="MONDO" style="margin-top: 15px"><i
+											class="icon-play"></i>Ultima canción publicada</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide dark" style="background-image:
+							url('music/images/slider/1.jpg'); background-position: bottom left;
+							background-size: cover">
+							<div class="container clearfix">
+								<div class="slider-caption">
+									<h2 class="font-primary nott">Mondo</h2>
+									<p class="d-none d-md-block"></p>
+									<a class="button button-rounded t400 ls1 track-list clearfix"
+										data-track="music/tracks/ANTES.mp3"
+										data-poster="music/tracks/poster-images/antes-150X150.jpg"
+										data-title="ANTES" data-singer="MONDO" style="margin-top: 15px"><i
+											class="icon-play"></i>Ultima canción publicada</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- AAC Desactivo las flechas que cambian de imagen de la portada 		
+			<div class="slider-arrow-left" class="nobg"><i class="icon-line-arrow-left"></i></div>
+			<div class="slider-arrow-right" class="nobg"><i class="icon-line-arrow-right"></i></div>
+ -->
 				</div>
-			</footer>
+			</section>
 
-		<!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-<!-- Galería de imágenes con ImageLightBox -->
-<script src="js/imagelightbox.js"></script>
-<script>
-    $( function()
-    {
-         $('a[data-imagelightbox="creditos"]').imageLightbox({
-//            button:         true, 
-              gutter:         0.25, 
-//            caption:        true,
-            quitOnImgClick: true,
-            fullscreen:     true
-         });
-    });     
-</script>
-        
+			<!-- Content
+		============================================= -->
+			<section id="content" class="bgcolor2" style="overflow: visible;">
+				<div class="content-wrap">
+					<div class="container clearfix" style="z-index: 7;">
+						<div class="heading-block bottommargin-sm noborder dark"
+							style="margin-top: -30px">
+							<h3>Proyecto Acústico</h3>
+							<span class="descripcionGrupo">En enero de 2017 comenzamos este proyecto
+								acústico, y aquí seguimos, en esta MONDONube que nos enganchó: Rocío y
+								Patricia (percusión) y Alberto (voz y guitarra).</span>
+							<span class="descripcionGrupo">
+								Poco a poco hemos convencido al silencio y hoy tenemos un buen puñado de
+								historias y algunos quejíos que pensamos que merece la pena contar y
+								cantar.
+								Hemos tenido la suerte de compartir nuestros temas con otros músicos:
+								Lucía (violín) y Pablo (guitarra eléctrica) que nos ayudan a llevar un
+								poco más lejos las canciones.</span>
+							<span class="descripcionGrupo">Y, sobre todo, hemos dado con gente
+								maravillosa que se acerca a escucharnos en directo.</span>	
+						</div>
 
-  <!-- Galeria de imagenes con PopTrox -->
-<!--		<script src="assets/js/jquery.poptrox.min.js"></script>			-->
- <!--       <script>
-			$(function() {				
-				var identificador = $('#gallery');
-				identificador.poptrox({
-					usePopupCaption: true,	
-                    popupWidth:	300,			
-	                 popupHeight: 400,
-                    popupCaptionHeight:	40,
-                    caption: {selector: "h5"}
-				});
-			
-			});
-		  </script>-->		
-        
-   <!--    Reproductor mp3 Https://github.com/sampotts/plyr-->
-    <script src="js/plyr.js"></script>
-    <script>
-        plyr.setup();
-    </script>
+						<!-- Carousel
+						============================================= -->
+						<div id="oc-popular-songs" class="owl-carousel image-carousel
+							carousel-widget" data-margin="20" data-nav="true" data-pagi="false"
+							data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="6"
+							data-items-xl="6">
+
+							<!-- Carousel Items - BANDA
+							============================================= -->
+							<div class="oc-item" data-animate="fadeInDown">
+								<img src="music/images/banda/1.jpg" alt="Image 1">
+								<div class="overlay">
+									<div class="text-overlay">
+										<div class="text-overlay-title">
+											<h3>Rocío</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item" data-animate="fadeInDown" data-delay="100">
+								<img src="music/images/banda/2.jpg" alt="Image 1">
+								<div class="overlay">
+									<div class="text-overlay">
+										<div class="text-overlay-title">
+											<h3>Patricia</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item" data-animate="fadeInDown" data-delay="250">
+								<img src="music/images/banda/3.jpg" alt="Image 1">
+								<div class="overlay">
+									<div class="text-overlay">
+										<div class="text-overlay-title">
+											<h3>Alberto</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item" data-animate="fadeInDown" data-delay="250">
+								<img src="music/images/banda/6.jpg" alt="Image 1">
+								<div class="overlay">
+									<div class="text-overlay">
+										<div class="text-overlay-title">
+											<h3></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item" data-animate="fadeInDown" data-delay="250">
+								<img src="music/images/banda/4.jpg" alt="Image 1">
+								<div class="overlay">
+									<div class="text-overlay">
+										<div class="text-overlay-title">
+											<h3>Lucía</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="oc-item" data-animate="fadeInDown" data-delay="250">
+								<img src="music/images/banda/5.jpg" alt="Image 1">
+								<div class="overlay">
+									<div class="text-overlay">
+										<div class="text-overlay-title">
+											<h3>Pablo</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row clearfix">
+							<div class="col-lg-2"></div>  <!-- espacio a la izqda de las canciones-->
+							<div class="col-lg-5">
+								<div class="heading-block noborder dark" style="margin-bottom: 15px;">
+									<h3 id="lnkCanciones">Canciones</h3>
+								</div>
+
+								<!-- Song Lists Items - REPRODUCTOR CANCIONES
+								============================================= -->
+								<div class="songs-lists-wrap">
+
+									<!-- List Items 
+									============================================= -->
+									<div class="songs-list">
+										<div class="songs-number">01</div>
+										<div class="songs-image track-image">
+											<a href="#" class="track-list"
+												data-track="music/tracks/ANTES.mp3"
+												data-poster="music/tracks/poster-images/antes-150X150.jpg"
+												data-title="Antes" data-singer="MONDO">
+												<img src="music/tracks/poster-images/antes-150X150.jpg"
+													alt="Image 1"><span><i class="icon-play"></i></span>
+											</a>
+										</div>
+										<div class="songs-name track-name">Antes<br><span>MONDO</span></div>
+										<div class="songs-time">03:28</div>
+										<div class="songs-button"><a href="#" class="dropdown-toggle"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+													class="icon-line-ellipsis"></i></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a class="dropdown-item" href="music/tracks/ANTES.mp3"><span
+															class="icon-line-cloud-download"></span>Descargar</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<!-- List Items 
+									============================================= -->
+									<div class="songs-list">
+										<div class="songs-number">02</div>
+										<div class="songs-image track-image">
+											<a href="#" class="track-list"
+												data-track="music/tracks/AGUA.mp3"
+												data-poster="music/tracks/poster-images/agua_150X150.jpg"
+												data-title="AGUA" data-singer="MONDO">
+												<img src="music/tracks/poster-images/agua_150X150.jpg"
+													alt="Image 1"><span><i class="icon-play"></i></span></a>
+										</div>
+										<div class="songs-name track-name">Agua<br><span>MONDO</span></div>
+										<div class="songs-time">03:56</div>
+										<div class="songs-button"><a href="#" class="dropdown-toggle"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+													class="icon-line-ellipsis"></i></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a class="dropdown-item" href="music/tracks/AGUA.mp3"><span
+															class="icon-line-cloud-download"></span>Descargar</a>
+												</li>
+											</ul>
+
+										</div>
+									</div>
+
+									<!-- List Items
+									============================================= -->
+									<div class="songs-list">
+										<div class="songs-number">03</div>
+										<div class="songs-image track-image">
+											<a href="#" class="track-list"
+												data-track="music/tracks/VERGUENZA.mp3"
+												data-poster="music/tracks/poster-images/verguenza_150X150.jpg"
+												data-title="Vergüenza" data-singer="MONDO">
+												<img src="music/tracks/poster-images/verguenza_150X150.jpg"
+													alt="Image 1"><span><i class="icon-play"></i></span></a>
+										</div>
+										<div class="songs-name track-name">Vergüenza<br><span>MONDO</span></div>
+										<div class="songs-time">03:48</div>
+										<div class="songs-button"><a href="#" class="dropdown-toggle"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+													class="icon-line-ellipsis"></i></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a class="dropdown-item" href="music/tracks/VERGUENZA.mp3"><span
+															class="icon-line-cloud-download"></span>Descargar</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<!-- List Items
+									============================================= -->
+									<div class="songs-list">
+										<div class="songs-number">04</div>
+										<div class="songs-image track-image">
+											<a href="#" class="track-list"
+												data-track="music/tracks/BROMA.mp3"
+												data-poster="music/tracks/poster-images/broma_150X150.jpg"
+												data-title="La broma" data-singer="MONDO">
+												<img src="music/tracks/poster-images/broma_150x150.jpg"
+													alt="Image 1"><span><i class="icon-play"></i></span></a>
+										</div>
+										<div class="songs-name track-name">La broma<br><span>MONDO</span></div>
+										<div class="songs-time">04:28</div>
+										<div class="songs-button"><a href="#" class="dropdown-toggle"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+													class="icon-line-ellipsis"></i></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a class="dropdown-item" href="music/tracks/BROMA.mp3"><span
+															class="icon-line-cloud-download"></span>Descargar</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<!-- List Items
+									============================================= -->
+									<div class="songs-list">
+										<div class="songs-number">05</div>
+										<div class="songs-image track-image">
+											<a href="#" class="track-list"
+												data-track="music/tracks/LQTESPERAN.mp3"
+												data-poster="music/tracks/poster-images/esperan_150X150.jpg"
+												data-title="Los que te esperan" data-singer="MONDO">
+												<img src="music/tracks/poster-images/esperan_150X150.jpg"
+													alt="Image 1"><span><i class="icon-play"></i></span></a>
+										</div>
+										<div class="songs-name track-name">Los que te esperan<br><span>MONDO</span></div>
+										<div class="songs-time">03:25</div>
+										<div class="songs-button"><a href="#" class="dropdown-toggle"
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+													class="icon-line-ellipsis"></i></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li>
+													<a class="dropdown-item" href="music/tracks/ANTES.mp3"><span
+															class="icon-line-cloud-download"></span>Descargar</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="col-lg-5">
+								<div class="row">
+									<div class="col-sm-6 mb-5">
+										<div class="heading-block noborder dark" >
+											<h3>Letras</h3>
+										</div>
+										<!-- Flip Card -LETRAS
+									============================================= -->
+										<div class="flip-card dark">
+											<div class="front no-after" style="background-image:
+												url('music/images/features/frontal.jpg')">
+												<div class="inner">
+													<div class="feature-box media-box">
+														<div class="fbox-icon position-relative mb-4" style="width:
+															38px;height: 38px">
+															<a href="#">
+																<img src="music/images/icons//text.svg" class="noradius
+																	nobg tleft" alt="Image">
+															</a>
+														</div>
+														<div class="fbox-desc">
+															<h4 class="t400 nott .text-black-50">Algunas letras de nuestras
+																canciones...</h4>
+															<p class="text-muted t500"></p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div data-lightbox="gallery" class="back" style="background-image:
+												url('music/images/features/inversa.jpg')">
+												<div class="inner mt-3">
+													<h4 class="mb-4 text-white">
+														<a href="music/letras/letra-antes.jpg"
+															data-lightbox="gallery-item">Antes</a>
+													</h4>
+													<h4 class="mb-4 text-white">
+														<a href="music/letras/letra-agua.jpg"
+															data-lightbox="gallery-item">Agua</a>
+													</h4>
+													<h4 class="mb-4 text-white">
+														<a href="music/letras/letra-broma.jpg"
+															data-lightbox="gallery-item">La Broma</a>
+													</h4>
+													<h4 class="mb-4 text-white">
+														<a href="music/letras/letra-verguenza.jpg"
+															data-lightbox="gallery-item">Vergüenza</a>
+													</h4>
+													<h5 class="mb-4 text-white">
+														<a href="music/letras/letra-lqtesperan.jpg"
+															data-lightbox="gallery-item">Los que te esperan</a>
+													</h5>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 mb-5">
+										<div class="heading-block noborder dark" style="margin-bottom: 15px;">
+											<h3></h3>
+										</div>
+										<!--  Flip Card
+									============================================= 
+									<div class="flip-card dark">
+										<div class="front no-after" style="background-color: #050505">
+											<div class="inner">
+												<div class="feature-box media-box">
+													<div class="fbox-icon position-relative mb-4" style="width: 38px;height: 38px">
+														<a href="#">
+															<img src="music/images/icons//travel.svg" class="noradius nobg tleft" alt="Image">
+														</a>
+													</div>
+													<div class="fbox-desc">
+														<h3 class="t400 nott text-white">Travel Blog</h3>
+														<p class="text-muted t500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="back" style="background-image: url('music/images/features/2.jpg')">
+											<div class="inner mt-3">
+												<h4 class="mb-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit.</h4>
+												<a href="#" class="button button-change ohidden rounded nott t300 m-0">
+													<span>View Photos</span>
+												</a>
+											</div>
+										</div>
+									</div>						 -->
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+
+						<div class="heading-block bottommargin-sm noborder dark">
+							<h3 id="lnkVideos">Videos</h3>
+							<span></span>
+						</div>
+						<!-- Portfolio Items
+						============================================= -->
+						<div id="portfolio" class="portfolio grid-container portfolio-3
+							portfolio-masonry portfolio-nomargin clearfix">
+
+							<article class="portfolio-item pf-media">
+								<div class="portfolio-image">
+									<a href="https://www.youtube.com/watch?v=ZZPksXFeTd8"
+										target="nuevaPagVideo">
+										<img src="music/tracks/poster-images/antes-600x513.jpg"
+											alt="Video ANTES">
+									</a>
+									<div class="portfolio-overlay">
+										<div class="portfolio-desc">
+											<h3><a href="https://www.youtube.com/watch?v=ZZPksXFeTd8"
+													target="nuevaPagVideo">ANTES</a></h3>
+										</div>
+										<a href="https://www.youtube.com/watch?v=ZZPksXFeTd8"
+											target="nuevaPagVideo" class="left-icon"><i class="icon-line-play"></i></a>
+									</div>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media">
+								<div class="portfolio-image">
+									<a href="https://www.youtube.com/watch?v=oR_BmqALBJA"
+										class="popup-youtube">
+										<img src="music/tracks/poster-images/verguenza_375x280.jpg"
+											alt="Vergüenza">
+									</a>
+									<div class="portfolio-overlay">
+										<div class="portfolio-desc">
+											<h3><a href="https://www.youtube.com/watch?v=oR_BmqALBJA"
+													target="nuevaPagVideo">Vergüenza</a></h3>
+										</div>
+										<a href="https://www.youtube.com/watch?v=oR_BmqALBJA"
+											target="nuevaPagVideo" class="left-icon"><i class="icon-line-play"></i></a>
+									</div>
+								</div>
+							</article>
+
+							<article class="portfolio-item pf-media">
+								<div class="portfolio-image">
+									<a href="https://www.youtube.com/watch?v=u216Z2JFazc"
+										class="popup-youtube">
+										<img src="music/tracks/poster-images/peli de locos-300x250.jpg"
+											alt="Vide Peli de locos">
+									</a>
+									<div class="portfolio-overlay">
+										<div class="portfolio-desc">
+											<h3><a href="https://www.youtube.com/watch?v=u216Z2JFazc">Peli de
+													locos</a></h3>
+										</div>
+										<a href="https://www.youtube.com/watch?v=u216Z2JFazc"
+											target="nuevaPagVideo" class="left-icon"><i class="icon-line-play"></i></a>
+									</div>
+								</div>
+							</article>
+						</div> <!-- #portfolio end -->
+
+						<!-- Top Charts - GALERIA FOTOS
+						============================================= -->
+						<div class="heading-block bottommargin-sm topmargin noborder dark">
+							<h3>Galería</h3>
+							<span></span>
+						</div>					
+
+						<div class="masonry-thumbs grid-5 bottommargin-sm clearfix" data-big="3"
+							data-lightbox="gallery">
+							<a href="music/images/fotos/mondo-rasca-2018-LGBox.jpg"
+								data-lightbox="gallery-item" data-animate="fadeIn" data-delay="100">
+								<img src="music/images/fotos/mondo-rasca-2018-thumb.jpg"
+									alt="Gallery Image">
+								<div class="overlay"><div class="overlay-wrap"><i
+											class="icon-line-zoom-in"></i></div></div>
+							</a>
+							<a href="music/images/fotos/mondo-lucia-smil-LGBox.jpg"
+								data-lightbox="gallery-item" data-animate="fadeIn" data-delay="200">
+								<img src="music/images/fotos/mondo-lucia-smil-thumb.jpg"
+									alt="Galeria de imagenes">
+								<div class="overlay" style="border-block-color: white; border-width:
+									2px"><div class="overlay-wrap"><i class="icon-line-zoom-in"></i></div></div>
+							</a>
+							<a href="music/images/fotos/mondo-pablo-atras-LGBox.jpg"
+								data-lightbox="gallery-item" data-animate="fadeIn" data-delay="250">
+								<img src="music/images/fotos/mondo-pablo-atras-thumb.jpg"
+									alt="Galeria de imagenes">
+								<div class="overlay"><div class="overlay-wrap"><i
+											class="icon-line-zoom-in"></i></div></div>
+							</a>
+							<a href="music/images/fotos/mondo-pablo-rasca-LGBox.jpg"
+								data-lightbox="gallery-item" data-animate="fadeIn" data-delay="300">
+								<img src="music/images/fotos/mondo-pablo-rasca-thumb.jpg"
+									alt="Galeria de imagenes">
+								<div class="overlay"><div class="overlay-wrap"><i
+											class="icon-line-zoom-in"></i></div></div>
+							</a>
+							<a href="music/images/fotos/mondo-bn-LGBox.jpg"
+								data-lightbox="gallery-item" data-animate="fadeIn" data-delay="350">
+								<img src="music/images/fotos/mondo-bn-thumb.jpg"
+									alt="Galeria de imagenes">
+								<div class="overlay"><div class="overlay-wrap"><i
+											class="icon-line-zoom-in"></i></div></div>
+							</a>
+							<a href="music/images/fotos/mondo-rasca-2019-LGBox.jpg"
+								data-lightbox="gallery-item" data-animate="fadeIn" data-delay="400">
+								<img src="music/images/fotos/mondo-rasca-2019-thumb.jpg"
+									alt="Gallery Image">
+								<div class="overlay"><div class="overlay-wrap"><i
+											class="icon-line-zoom-in"></i></div></div>
+							</a>
+							<a href="music/images/fotos/mondo-lucia-cfeo-LGBox.jpg"
+								data-lightbox="gallery-item" data-animate="fadeIn" data-delay="450">
+								<img src="music/images/fotos/mondo-lucia-cfeo-thumb.jpg"
+									alt="Gallery Image">
+								<div class="overlay"><div class="overlay-wrap"><i
+											class="icon-line-zoom-in"></i></div></div>
+							</a>
+						</div>
+					</div>
+				</div>	
+			</section><!-- #content end -->
+
+			<!-- Footer
+		============================================= -->
+			<footer id="footer" class="noborder dark" style="background-color: #111;">
+				<!-- Copyrights
+			============================================= -->
+				<div id="copyrights" style="color: #444;">
+
+					<div class="container clearfix">
+
+						<div class="col_half">
+						 Copyright &copy; 2019 MONDO  - Contactar: AACAAP@yahoo.es
+						</div>
+
+						<!-- <div class="col_half">
+								<div class="fright clearfix">
+									<a href="https://www.facebook.com/Mondo-Band-1498338833536681"
+										class="social-icon si-small si-borderless si-facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+	
+									<a href="https://www.instagram.com/lamondoband/" class="social-icon
+										si-small si-borderless si-instagram">
+										<i class="icon-linkedin"></i>
+										<i class="icon-linkedin"></i>
+									</a>
+								</div>
+							</div> -->
+							
+					</div>
+
+				</div><!-- #copyrights end -->
+
+			</footer><!-- #footer end -->
+
+		</div><!-- #wrapper end -->
+
+		<!-- Audio Player
+	============================================= -->
+
+		<audio id="audio-player" preload="none" class="mejs__player" controls data-mejsoptions='{"defaultAudioHeight": "50", "alwaysShowControls": "true"}' style="max-width:100%;">
+			<source src="music/tracks/ANTES.mp3" type="audio/mp3">
+		</audio>
+
+		<!-- Default Track - onLoad
+	============================================= -->
+		<div id="track-onload" data-track="music/tracks/ANTES.mp3"
+			data-poster="music/tracks/poster-images/antes-150X150.jpg"
+			data-title="ANTES" data-singer="MONDO">
+		</div>
+
+		<!-- Go To Top
+	============================================= -->
+		<div id="gotoTop" class="icon-angle-up" style="bottom: 70px;">
+		</div>
+
+		<!-- External JavaScripts
+	============================================= -->
+		<script src="js/jquery.js"></script>
+		<script src="js/plugins.js"></script>
+
+		<!-- Audio player Plugin
+	============================================= -->
+		<script src="music/js/mediaelement/mediaelement-and-player.js"></script>
+		<!-- Footer Scripts
+	============================================= -->
+		<script src="js/functions.js"></script>
+
+		<script>
+
+		// Custom Tab jQuery
+		// jQuery( '.tabs' ).on( 'tabsactivate', function( event, ui ) {
+		// 	var gridContainerAvailable = jQuery( ui.newPanel ).find('.grid-container');
+
+		// 	if( gridContainerAvailable.length > 0 ) {
+		// 		gridContainerAvailable.each( function(){
+		// 			var portfolioGrid = jQuery(this);
+
+		// 			if( !portfolioGrid.hasClass('tabs-enabled-grid-container') ) {
+		// 				portfolioGrid.isotope('layout');
+		// 				jQuery(window).trigger('resize');
+		// 				portfolioGrid.addClass('tabs-enabled-grid-container');
+		// 			}
+		// 		});
+		// 	}
+		// });
+
+		// Music playing Scripts
+		var trackPlaying = '',
+			audioPlayer = document.getElementById('audio-player');
+
+		audioPlayer.addEventListener("ended", function(){
+			jQuery('.track-list').find('i').removeClass('icon-pause').addClass('icon-play');
+		});
+
+		audioPlayer.addEventListener("pause", function(){
+			jQuery('.track-list').find('i').removeClass('icon-pause').addClass('icon-play');
+		});
+
+		function changeAudio( sourceUrl, posterUrl, trackTitle, trackSinger, playAudio = true ) {
+			var audio = $("#audio-player"),
+				clickEl = jQuery('[data-track="'+sourceUrl+'"]'),
+				playerId = audio.closest('.mejs__container').attr('id'),
+				playerObject = mejs.players[playerId];
+
+			jQuery('.track-list').find('i').removeClass('icon-pause').addClass('icon-play');
+
+			if( sourceUrl == trackPlaying ) {
+				if (playerObject.paused) {
+					playerObject.play();
+					clickEl.find('i').removeClass('icon-play').addClass('icon-pause');
+				} else {
+					playerObject.pause();
+					clickEl.find('i').removeClass('icon-pause').addClass('icon-play');
+				}
+				return true;
+			}
+
+			trackPlaying = sourceUrl;
+
+			audio.attr( 'poster', posterUrl );
+			audio.attr( 'title', trackTitle );
+
+			jQuery('.mejs__layers').html('').html('<div class="mejs-track-artwork"><img src="'+ posterUrl +'" alt="Track Poster" /></div><div class="mejs-track-details"><h3>'+ trackTitle +'<br><span>'+ trackSinger +'</span></h3></div>');
+
+			if( sourceUrl != '' ) {
+				playerObject.setSrc( sourceUrl );
+			}
+			playerObject.pause();
+			playerObject.load();
+
+			if( playAudio == true ) {
+				playerObject.play();
+				jQuery(clickEl).find('i').removeClass('icon-play').addClass('icon-pause');
+			}
+		}
+
+		jQuery('.track-list').on( 'click', function(){
+			var audioTrack = jQuery(this).attr('data-track'), // Track url
+				posterUrl = jQuery(this).attr('data-poster'), // Track Poster Image
+				trackTitle = jQuery(this).attr('data-title'); // Track Title
+				trackSinger = jQuery(this).attr('data-singer'); // Track Singer Name
+
+			changeAudio( audioTrack, posterUrl, trackTitle, trackSinger );
+			return false;
+		});
+
+		jQuery(window).on( 'load', function(){
+			var trackOnload = jQuery('#track-onload');
+
+			if( trackOnload.length > 0 ) {
+				var audioTrack = trackOnload.attr('data-track'), // Track url
+					posterUrl = trackOnload.attr('data-poster'), // Track Poster Image
+					trackTitle = trackOnload.attr('data-title'); // Track Title
+					trackSinger = trackOnload.attr('data-singer'); // Track Singer Name
+
+				setTimeout( function(){
+					changeAudio( audioTrack, posterUrl, trackTitle, trackSinger, false );
+				}, 500);
+			}
+		});
+
+	</script>
 	</body>
 </html>

@@ -4,6 +4,15 @@
 .descripcionGrupo {
 	font-size: 1.2em !important;
 }
+.descripcionRAE{
+	font-size: 1em !important;
+	background-color: darkgray;
+	font-style: italic;
+	color:black !important;
+	/* margin-right: 1.5em;
+	margin-left: 5em !important; */
+	width: 32rem;
+}
 
 .flip-card {
 	-webkit-transform-style: preserve-3d;

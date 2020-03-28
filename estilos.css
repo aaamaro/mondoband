@@ -4,6 +4,17 @@
 .descripcionGrupo {
 	font-size: 1.2em !important;
 }
+.descripcionCuandoPase {
+	font-size: 1.4em !important;
+	color:rgb(134, 89, 89) !important;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+	font-style: italic;
+	display: block;
+}
+.contenedorCuandoPase {
+	background-image: "music/images/features/virus.jpg" !important ;
+}
 .descripcionRAE{
 	font-size: 1em !important;
 	background-color: darkgray;

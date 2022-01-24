@@ -7,7 +7,7 @@
 
 .descripcionGrupo {
 	font-size: 1.2em !important;
-	text-align: center;
+	/* text-align: center; */
 }
 .descripcionExGrupo {
 	font-size: 1.1em !important;
@@ -37,8 +37,8 @@
 	/* margin-right: 1.5em;
 	margin-left: 5em !important; */
 	width: 32rem;
-	margin-right: auto;
-	margin-left: auto;
+/* 	margin-right: auto;
+	margin-left: auto; */
 	margin-top: 1.2em;
 }
 
